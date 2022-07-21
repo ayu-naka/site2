@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+/* A Modern CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box; }
+  
+  ul, ol {
+    padding: 0; }
+  
+  body, h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd {
+    margin: 0; }
+  
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5; }
+  
+  ul, ol {
+    list-style: none; }
+  
+  a:not {
+    -webkit-text-decoration-skip: ink;
+            text-decoration-skip-ink: auto; }
+  
+  img {
+    max-width: 100%;
+    display: block; }
+  
+  input, button, textarea, select {
+    font: inherit; }
+  
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      -webkit-animation-duration: .01ms !important;
+              animation-duration: .01ms !important;
+      -webkit-animation-iteration-count: 1 !important;
+              animation-iteration-count: 1 !important;
+      transition-duration: .01ms !important;
+      scroll-behavior: auto !important; } }
+  
+  input, button, textarea, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none; }
+  
+  input, select {
+    line-height: 1; }
+  
+  select::-ms-expand {
+    display: none; }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  
+  input[type="number"] {
+    -moz-appearance: textfield; }
+  
+  button, label {
+    cursor: pointer; }
+  
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  
+  @-webkit-keyframes fadeOut {
+    from {
+      opacity: 1; }
+    to {
+      opacity: 0; } }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1; }
+    to {
+      opacity: 0; } }
+  
+  @-webkit-keyframes slideInUp {
+    0% {
+      opacity: 0;
+      top: 10px; }
+    70% {
+      opacity: 1; }
+    100% {
+      opacity: 1;
+      top: 0; } }
+  
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      top: 10px; }
+    70% {
+      opacity: 1; }
+    100% {
+      opacity: 1;
+      top: 0; } }
+  
+  @-webkit-keyframes slideInDown {
+    0% {
+      opacity: 0;
+      top: -10px; }
+    70% {
+      opacity: 1; }
+    100% {
+      opacity: 1;
+      top: 0; } }
+  
+  @keyframes slideInDown {
+    0% {
+      opacity: 0;
+      top: -10px; }
+    70% {
+      opacity: 1; }
+    100% {
+      opacity: 1;
+      top: 0; } }
+  
+  @-webkit-keyframes imagesGradation {
+    0% {
+      left: -100%; }
+    30% {
+      left: 0; }
+    40% {
+      left: 0; }
+    100% {
+      left: 100%; } }
+  
+  @keyframes imagesGradation {
+    0% {
+      left: -100%; }
+    30% {
+      left: 0; }
+    40% {
+      left: 0; }
+    100% {
+      left: 100%; } }
+  
+  @-webkit-keyframes imagesImage {
+    0% {
+      opacity: 0; }
+    30% {
+      opacity: 0; }
+    31% {
+      opacity: 1; }
+    100% {
+      opacity: 1; } }
+  
+  @keyframes imagesImage {
+    0% {
+      opacity: 0; }
+    30% {
+      opacity: 0; }
+    31% {
+      opacity: 1; }
+    100% {
+      opacity: 1; } }
+  
+  @-webkit-keyframes loadingPre {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  
+  @keyframes loadingPre {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+  
+  @-webkit-keyframes loadingloaded {
+    0% {
+      left: 0; }
+    100% {
+      left: 100%; } }
+  
+  @keyframes loadingloaded {
+    0% {
+      left: 0; }
+    100% {
+      left: 100%; } }
+  
+  html {
+    height: 100%;
+    font-size: 62.5%; }
+  
+  body {
+    cursor: default;
+    height: 100%;
+    background-color: #000000;
+    -webkit-text-size-adjust: 100%;
+       -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "palt";
+    font-family: "Noto Sans JP", Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+    font-weight: 400;
+    color: #1E1E1E; }
+    @media screen and (max-width: 767px) {
+      body .MN {
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      body .MN {
+        display: none; } }
+    @media screen and (max-width: 767px) {
+      body .LG {
+        display: none; } }
+    @media screen and (min-width: 768px) {
+      body .LG {
+        display: block; } }
+    body.is-fixed {
+      overflow: hidden;
+      height: 100vh; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.28; }
+  
+  img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto; }
+  
+  .screen-reader-text {
+      overflow: hidden;
+      position: absolute;
+      top: -10px;
+      width: 1px;
+      height: 1px;
+      margin: 0 !important;
+      padding: 0 !important; 
+  }
+  /*ここまで*/
+body{
+    background-color: #fff;
+}
+  h1{
+    color:orangered;
+  }
